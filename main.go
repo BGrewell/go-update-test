@@ -3,6 +3,7 @@ package main
 import (
 	"errors"
 	"fmt"
+	vercheck "github.com/mcuadros/go-version"
 	"log"
 	"net/http"
 	"path/filepath"
@@ -36,7 +37,7 @@ func latestTaggedVersion() string {
 }
 
 func isUpdateAvailable(onlineVersion string) bool {
-	return false
+	return vercheck.Compare(onlineVersion, version, "<")
 }
 
 func main() {
