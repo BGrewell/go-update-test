@@ -9,7 +9,7 @@ import (
 )
 
 var (
-	version = "v1.0.2"
+	version = "DEBUG"
 	tagCheckUrl = "https://github.com/BGrewell/go-update-test/releases/latest"
 	updateUrlStub = "https://github.com/BGrewell/go-update-test/releases/download/%VER%/go-update-test_%VER%_Linux_x86_64.tar.gz"
 )
