@@ -37,7 +37,7 @@ func latestTaggedVersion() string {
 }
 
 func isUpdateAvailable(onlineVersion string) bool {
-	return vercheck.Compare(onlineVersion, version, "<")
+	return vercheck.Compare(onlineVersion, version, ">")
 }
 
 func main() {
